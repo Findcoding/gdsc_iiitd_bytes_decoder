@@ -1,4 +1,4 @@
-# gdsc_iiitd_bytes_decoder
+# GDSC IIIT 2022
 
 <!-- ## Create Virtual Environment
 - Download virtual Environment Module
