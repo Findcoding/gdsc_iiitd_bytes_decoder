@@ -63,7 +63,7 @@ svg {
 }
 
 .content h2:nth-child(2) {
-    color: #2626f2;
+    color: #000;
     animation: animate 4s ease-in-out infinite;
 }
 
@@ -93,4 +93,37 @@ svg {
                 100% 100%,
                 0% 100%);
     }
+}
+
+
+/* card */
+
+.bg-gradient-1 {
+    background: #7f7fd5;
+    background: -webkit-linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    background: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+}
+
+
+
+/* dropdown */
+
+.col-lg-6 {
+    text-align: center;
+    max-width: 100% !important;
+}
+
+.selectWrapper {
+    border-radius: 36px;
+    display: inline-block;
+    overflow: hidden;
+    background: #cccccc;
+    border: 1px solid #cccccc;
+}
+
+.selectBox {
+    width: 540px;
+    height: 40px;
+    border: 0px;
+    outline: none;
 }

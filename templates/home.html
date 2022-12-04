@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}" />
-    <!-- <script type="text/javascript" src="{% static 'js/home.js' %}"></script> -->
+    <script type="text/javascript" src="{% static 'js/home.js' %}"></script>
 
     {% endblock %}
 
@@ -52,6 +52,52 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div class="py-5 inner">
+            <div class="row" style="padding-top: 50px;">
+                <div class="col-lg-6 mx-auto">
+                    <div class="col-lg-6">
+                        <h2 class="display-4 font-weight-light animate__animated animate__bounceInLeft animate__slower">Where do you live?</h2>
+                    </div>
+                    <div class="selectWrapper">
+                        <select class="selectBox">
+                            <option>United Kingdom</option>
+                            <option>United States</option>
+                            <option>France</option>
+                            <option>Germany</option>
+                            <option>Italy</option>
+                        </select>
+                    </div>
+                </div> 
+            </div>
+
+            
+        </div>
+
+
+        <div class="py-5 inner">
+            <div class="container py-5">
+                    <div class="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5" style="padding-top: 300px;">
+                        <p class="mb-4 font-weight-bold text-uppercase">New year's eve in</p>
+                        <div id="clock-b" class="countdown-circles d-flex flex-wrap justify-content-center pt-4"></div>
+                        <p class="mb-0 font-weight-bold text-uppercase" id="date"></p>
+                        <div id="clockc" class="countdown py-4">
+                            <span class="h2 font-weight-bold" id="hour">00</span>
+                            <span class="h2 font-weight-bold" id="min">00</span>
+                            <span class="h2 font-weight-bold" id="sec">00</span>
+                            <span class="h2 font-weight-bold" id="zone"></span>
+
+                        </div>
+                    </div>
+            </div>
+        </div>    
+
+
+        
+
+        
 
 
 
