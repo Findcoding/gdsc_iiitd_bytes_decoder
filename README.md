@@ -1,4 +1,4 @@
-# GDSC IIIT 2022
+# GDSC IIITD 2022
 
 <!-- ## Create Virtual Environment
 - Download virtual Environment Module
