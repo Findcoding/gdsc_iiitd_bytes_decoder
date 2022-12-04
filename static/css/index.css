@@ -63,7 +63,7 @@ svg {
 }
 
 .content h2:nth-child(2) {
-    color: #2626f2;
+    color: #000;
     animation: animate 4s ease-in-out infinite;
 }
 
