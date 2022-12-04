@@ -30,6 +30,8 @@
 <body>
     {% block content %}
 
+    
+
     <div class="container">
         <div class="bg-light">
             <div class="container py-5">
@@ -62,13 +64,8 @@
                         <h2 class="display-4 font-weight-light animate__animated animate__bounceInLeft animate__slower">Where do you live?</h2>
                     </div>
                     <div class="selectWrapper">
-                        <select class="selectBox">
+                        <select class="selectBox" id="city">
                             <option value="none">Select</option>
-                            <option>United Kingdom</option>
-                            <option>United States</option>
-                            <option>France</option>
-                            <option>Germany</option>
-                            <option>Italy</option>
                         </select>
                     </div>
                 </div> 
@@ -76,18 +73,10 @@
             
         </div>
 
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end animate__animated animate__bounceInRight animate__slower" style="padding-top:10px;">
-            <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Submit</span>
-            </button>
-
-        </div>
+        
 
 
-        <div class="py-5 inner">
+        <div class="py-5 inner" id="datatime_card" style="display: none;">
             <div class="container py-5">
                     <div class="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
                         <p class="mb-0 font-weight-bold text-uppercase" id="date" style="font-size: 3rem;"></p>
