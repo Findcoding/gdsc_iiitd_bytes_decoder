@@ -104,7 +104,9 @@ svg {
     background: linear-gradient(to right, #292929, #caced6, #c8cdcb);
 }
 
-
+.h22 {
+    font-size: 5rem !important;
+}
 
 /* dropdown */
 
