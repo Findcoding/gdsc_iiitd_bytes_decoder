@@ -75,3 +75,18 @@ function Time() {
     // refreshTime()
     setInterval(refreshTime, 1000);
 }
+
+
+
+
+function logout(event) {
+    let val = confirm('Do you want to logout?');
+
+    if (val == true) {
+        return true;
+    } else {
+        event.stopImmediatePropagation();
+        event.preventDefault();
+        return false;
+    }
+}

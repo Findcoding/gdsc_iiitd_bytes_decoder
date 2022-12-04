@@ -30,7 +30,16 @@
 <body>
     {% block content %}
 
-    
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end animate__animated animate__bounceInRight animate__slower" style="padding-top:10px;">
+        <a href="{% url 'index' %}" style="text-decoration:none">
+            <button class="learn-more" onclick="logout(event)">
+                <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+                </span>
+                <span class="button-text">Logout</span>
+            </button>
+        </a>
+    </div>
 
     <div class="container">
         <div class="bg-light">
