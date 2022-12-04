@@ -11,7 +11,7 @@ virtualenv <environment_name>
 ``` -->
 ## Run Command to install required Python Module
 ```sh
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 ## To run App use this command
 ```sh
