@@ -2,43 +2,35 @@ console.log('hell');
 
 
 
-const date_url = "http://worldtimeapi.org/api/timezone/Asia/Kolkata";
+const date_url = "http://worldtimeapi.org/api/timezone/America/New_York";
 
 async function refreshTime() {
 
-    try {
-        const response = await fetch(date_url);
+    const response = await fetch(date_url);
         const data = await response.json();
 
+        console.log(data);
+
         const dateTimeInParts = data.datetime.split("T");
+        console.log(dateTimeInParts)
 
-        const t = new Date(dateTimeInParts);
-        // console.log(t);
-        // const date = dateTimeInParts[0];
-        // const time = dateTimeInParts[1];
+        const arr1 = dateTimeInParts[0].split("-");
+        console.log(arr1);
 
-        var date = new Date(dateTimeInParts);
-        // console.log(date);
-        var hour = date.toLocaleString("default", { hour: "2-digit" });
-        const myArray = hour.split(" ");
-        var minute = date.toLocaleString("default", { minute: "2-digit" });
-        var second = date.toLocaleString("default", { second: "2-digit" });
+        const arr2 = dateTimeInParts[1].split(":");
+        console.log(arr2);
 
-        document.getElementById("hour").textContent = myArray[0] + ":";
-        document.getElementById("min").textContent = minute + ":";
-        document.getElementById("sec").textContent = second + " ";
-        document.getElementById("zone").textContent = myArray[1];
+        var second = arr2[2].split(".");
 
-        var datetime = date.toDateString();
-        const arr = datetime.split(" ");
-        document.getElementById("date").textContent = arr[0] + ", " + arr[2] + " " + arr[1] + " " + arr[3];
+        document.getElementById("hour").textContent = arr2[0] + ":";
+        document.getElementById("min").textContent = arr2[1] + ":";
+        document.getElementById("sec").textContent = second[0] + " ";
+        document.getElementById("zone").textContent = "AM";
 
-
-    } catch (err) {
-        alert("Something went wrong!! Please reload this page...");
-        location.reload();
-    }
+        document.getElementById("date").textContent = arr1[2] + "-" + arr1[1] + "-" + arr1[0];
 
 }
-    
+
+// refreshTime()
+
 setInterval(refreshTime, 1000);
