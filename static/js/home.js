@@ -22,7 +22,15 @@ async function refreshTime() {
         // console.log(arr2);
 
         var h = arr2[0] % 12;
-        var hour =  h < 10 ? '0'+h : h;
+        var hour;
+
+        if(h == 0) {
+            hour = 12;
+        } else if (h < 10) {
+            hour = '0'+h;
+        } else {
+            hour = h;
+        }
 
         var second = arr2[2].split(".");
         var zone = arr2[0] >= 12 ? 'PM' : 'AM';
