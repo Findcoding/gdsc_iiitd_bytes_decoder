@@ -9,6 +9,8 @@ async function refreshTime() {
     if(city != 'none') {
 
         document.getElementById('datatime_card').style.display = "block";
+        let country = city.split("/");
+        document.getElementById('country').textContent = "Current Local Date & Time in " + country[1];
 
         const response = await fetch(date_url + city);
         const data = await response.json();
@@ -66,7 +68,7 @@ async function zone() {
         let optn = data[i];
         let el = document.createElement("option");
 
-        let txt = data[i].split("/")
+        let txt = data[i].split("/");
         el.textContent = txt[1];
 
         el.value = optn;
